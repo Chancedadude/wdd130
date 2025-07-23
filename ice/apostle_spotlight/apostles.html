@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #E8ECEC;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: url('images/christus.webp') no-repeat center center fixed;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            margin: 30px auto;
+            max-width: 900px;
+            border: 3px solid black;
+        }
+
+        h1, h2 {
+            margin: 20px 0;
+        }
+
+        .first-presidency, .quorum {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .first-presidency img, .quorum img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid white;
+            transition: border-color 0.3s;
+        }
+
+        .first-presidency img {
+            width: 140px;
+            height: 140px;
+        }
+
+        .quorum{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            flex-wrap: wrap;
+            justify-items: center;
+            gap: 20px;
+            max-width: 500px;
+            margin: 0 auto 40px;
+        }
+
+        .quorum img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+        }
+
+        .first-presidency img:hover, .quorum img:hover {
+            border-color: gold;
+        }
+
+        img:hover {
+            border-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>First Presidency</h1>
+        <div class="first-presidency">
+        <img src="images/oaks.webp" alt="President Oaks" style="width:110px; height:110px;">
+        <img src="images/nelson.webp" alt="President Nelson" style="width:140px; height:140px;">
+        <img src="images/eyring.webp" alt="President Eyring" style="width:110px; height:110px;">
+    </div>
+
+    <h2>Quorum of the Twelve Apostles</h2>
+    <div class="quorum">
+
+        <img src="images/holland.webp" alt="Apostle 1">
+        <img src="images/uchtdorf.webp" alt="Apostle 2">
+        <img src="images/bednar.webp" alt="Apostle 3">
+        <img src="images/cook.webp" alt="Apostle 4">
+        <img src="images/christofferson.webp" alt="Apostle 5">
+        <img src="images/anderson.webp" alt="Apostle 6">
+        <img src="images/rasband.webp" alt="Apostle 7">
+        <img src="images/stevenson.webp" alt="Apostle 8">
+        <img src="images/renlund.webp" alt="Apostle 9">
+        <img src="images/gong.webp" alt="Apostle 10">
+        <img src="images/soares.webp" alt="Apostle 11">
+        <img src="images/kearon.webp" alt="Apostle 12">
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- This is a comment -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portal Page</title>
+    <link rel="stylesheet" href="">
+    <style>
+        /* General page styles */
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Wrapper for layout */
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #154a43;
+            padding: 1rem;
+            border-bottom: 1px solid #ccc;
+            color: white;
+        }
+        header img {
+            margin-right: 1rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #e0e0e0;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #154a43;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1rem 0;
+        }
+        main section {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin: 1rem;
+            flex: 0 1 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        main table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        main th, main td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #154a43;
+            color: white;
+            padding: 1rem;
+            padding-bottom: 80px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        footer li {
+            margin: 0 1rem;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer form */
+        footer form {
+            max-width: 400px;
+            margin: 0 auto 1rem auto;
+            display: flex;
+            flex-direction: column;
+        }
+        footer form label,
+        footer form input,
+        footer form textarea,
+        footer form button {
+            margin-bottom: 0.5rem;
+            width: 100%;
+        }
+
+        /* Chat box */
+        .chat-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 200px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            z-index: 999; /* makes sure it's on top */
+        }
+        .chat-box input {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+        .chat-box button {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- HEADER -->
+        <header>
+            <img src="images/Wave.png" alt="Logo" width="80">
+            <h1>Chance Tuft's Portal Page</h1>
+        </header>
+
+        <!-- NAVIGATION BAR -->
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="index.html">WWR</a>
+            <a href="../ice/index.html">ICE</a>
+            <a href="../aboutme.html">About Me</a>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <ul>
+            <li><a href="site-plan-rafting.html">site-plan-rafting</a></li>
+            <li><a href="styles/index.html">White Water Rafting</a></li>
+            </ul>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">WWR</a></li>
+                <li><a href="../ice/index.html">ICE</a></li>
+                <li><a href="../aboutme.html">About Me</a></li>
+            </ul>
+
+            <h4>Contact</h4>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+            <p>&copy; Tuft 2025</p>
+        </footer>
+
+        <!-- CHAT BOX (floating) -->
+        <div class="chat-box">
+            <p><strong>Chat Box</strong></p>
+            <input type="text" placeholder="Type a message..." />
+            <button>Send</button>
+        </div>
+
+    </div>
+</body>
+</html>
